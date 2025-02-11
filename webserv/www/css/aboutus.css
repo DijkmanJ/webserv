@@ -1,0 +1,49 @@
+.container {
+    text-align: center;
+    max-width: 800px; /* Maximaliseer de breedte van de container */
+    padding: 20px;
+}
+
+.image-container {
+    margin-bottom: 10px; /* Ruimte boven de afbeelding */
+}
+
+.image-container img {
+    width: 100%; /* Zorg dat de afbeelding de volledige breedte benut */
+    max-width: 400px; /* Maximaliseer de breedte van de afbeelding */
+    height: auto; /* Houd de verhoudingen van de afbeelding intact */
+}
+
+.main-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.section {
+    margin-bottom: 30px; /* Ruimte tussen de secties */
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px; /* Ronde hoeken */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Schaduw effect */
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center; /* Centraal uitlijnen van tekst en iconen */
+}
+
+.section-title i {
+    margin-right: 10px; /* Ruimte tussen het icoon en de titel */
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 16px;
+}

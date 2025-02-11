@@ -1,0 +1,142 @@
+.container {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+}
+
+.main-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.file-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.file-list li {
+    background: linear-gradient(#1F1F1F, #000);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    transition: background 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-list li:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+}
+
+.file-name {
+    margin-right: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: light;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.5px;
+}
+
+.file-actions {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.action-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.action-button:hover {
+    transform: scale(1.1);
+}
+
+.download-button {
+    color: #4CAF50;
+}
+
+.delete-button {
+    color: #ff6347;
+}
+
+.file-upload-container {
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1f1f1f;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    background-color: #333;
+}
+
+.upload-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ff6347;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.upload-button:hover {
+    background-color: #ff4500;
+}
+
+#upload-message {
+    margin-top: 20px;
+    color: #ff6347;
+}
+
+.error-message {
+    color: #ff4444;
+    margin: 20px 0;
+}
+
+.upload-button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}

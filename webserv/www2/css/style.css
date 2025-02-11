@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Code Ligatures', monospace;
+    background-color: #467fd4;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 100px; /* Reduced padding-top from 150px */
+  }

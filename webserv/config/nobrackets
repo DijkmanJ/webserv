@@ -1,0 +1,55 @@
+
+SERVER server1
+PORT 8080
+HOST 0.0.0.0
+CLIENT_MAX_BODY_SIZE 200000
+
+ERROR_PAGE error.html
+INDEX_FILE index.html
+CGI_PATH /cgi-bin
+CGI_EXTENTION .php
+TAG_AUTOINDEX /list-files
+AUTOINDEX_PAGE autoindex.html
+ROOT /www
+
+[
+	NAME root
+	PATH /www
+	ALLOWED_METHODS GET
+	AUTO_INDEX on
+]
+
+[
+	NAME uploads
+	PATH /www/uploads
+	ALLOWED_METHODS GET, POST, DELETE
+	AUTO_INDEX on
+	POST_ALLOWED_TYPES jpg, png, json
+]
+
+[
+	NAME images
+	PATH /www/images
+	ALLOWED_METHODS GET, DELETE
+	AUTO_INDEX on
+]
+
+[
+	NAME css
+	PATH /www/css
+	ALLOWED_METHODS GET
+]
+
+[
+	NAME js
+	PATH /www/js
+	ALLOWED_METHODS GET
+]
+
+[
+	NAME cgi-bin
+	PATH /www/cgi-bin
+	ALLOWED_METHODS GET
+]
+
+

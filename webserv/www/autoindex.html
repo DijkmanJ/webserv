@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Directory Listing</title>
+  <style>
+      * {
+          box-sizing: border-box;
+      }
+
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Comic Code Ligatures', monospace;
+          background-color: #111;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          min-height: 100vh;
+          padding: 50px 0;
+      }
+
+      .container {
+          max-width: 800px;
+          width: 100%;
+          padding: 20px;
+      }
+
+      .directory-title {
+          font-size: 28px;
+          margin-bottom: 30px;
+          text-align: center;
+          color: #fff;
+          font-weight: 300;
+          letter-spacing: 1px;
+      }
+
+      .file-list {
+          list-style: none;
+          padding: 15px;
+          margin: 20px 0;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 15px;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .file-list li {
+          background: linear-gradient(#1F1F1F, #000);
+          margin: 10px;
+          padding: 15px;
+          border-radius: 5px;
+          display: block;
+          justify-content: space-between;
+          align-items: center;
+          transition: background 0.3s ease;
+      }
+
+      .file-list li:hover {
+			cursor: pointer;
+          background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+      }
+
+      .file-name {
+          margin-right: 15px;
+          font-family: 'Poppins', sans-serif;
+          font-weight: light;
+          letter-spacing: 0.5px;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+      <h1 class="directory-title"></h1>
+      <div id="fileListSection">
+          <ul id="fileList" class="file-list"></ul>
+      </div>
+  </div>
+
+  <script src="/www/js/autoindex.js"></script>
+</body>
+</html>

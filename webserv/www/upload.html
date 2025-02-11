@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/www/css/style.css"> <!-- Algemeen stijlbestand -->
+    <link rel="stylesheet" href="/www/css/upload.css"> <!-- Specifieke stijlen voor About Us -->
+    <title>File Upload Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Upload Your File</h1>
+        <p class="intro-text">Please select a file to upload. We are excited to receive your submission!</p>
+
+        <!-- File List Section -->
+        <div id="fileListSection" style="display: none;">
+            <div class="section">
+                <h2 class="section-title">Uploaded Files</h2>
+                <ul id="fileList" class="file-list"></ul>
+            </div>
+        </div>
+
+        <!-- Upload Section -->
+        <div class="section">
+            <h2 class="section-title">File Upload</h2>
+            <form id="uploadForm" method="POST" action="/www/upload.html" enctype="multipart/form-data">
+                <input type="file" id="fileInput" name="file">
+                <input type="submit" value="Upload File" class="upload-button" id="uploadButton" disabled>
+            </form>
+        </div>
+
+        <div id="upload-message"></div>
+
+        <div class="footer">
+            <p>Thank you for visiting our page. We look forward to your file submission!</p>
+        </div>
+    </div>
+
+    <script src="/www/js/upload.js"></script>
+</body>
+</html>

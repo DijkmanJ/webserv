@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Comic+Code+Ligatures&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/www/css/style.css"> <!-- General stylesheet -->
+    <link rel="stylesheet" href="/www/css/index.css"> <!-- Specific styles for the page -->
+
+    <title>Form Submission</title>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-text">
+            <span class="main-title">Submit Your Data</span>
+            <span class="sub-title">Jim & Ole</span>
+        </div>
+        <form action="/www/cgi-bin/handle_form.py" method="post" class="form-container">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required class="form-input"><br><br>
+            
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required class="form-input"><br><br>
+            
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+        <!-- Add a button to go back to the home page -->
+        <a href="/www/index.html" class="button-container">
+            <div class="button">
+                <span class="about-text">Back to Home</span>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
